@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <h1>Admin Panel</h1>
+      <a href="/index.html">Go to Student Page</a>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h2>Create Exam</h2>
+
+        <label>Exam Title</label>
+        <input id="examTitleInput" placeholder="Example: Physics Midterm" />
+
+        <label>Description</label>
+        <textarea id="examDescriptionInput" placeholder="Short exam description"></textarea>
+
+        <div id="questionBuilder"></div>
+
+        <div class="actions">
+          <button id="addMcqBtn">Add MCQ</button>
+          <button id="addFrqBtn">Add FRQ</button>
+          <button id="createExamBtn">Create Exam</button>
+        </div>
+
+        <div id="createExamResult"></div>
+      </div>
+
+      <div class="card">
+        <h2>Submissions</h2>
+        <div id="submissionList"></div>
+      </div>
+    </div>
+
+    <div id="gradeSection" class="card hidden">
+      <h2>Grade Submission</h2>
+      <div id="gradeContent"></div>
+    </div>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

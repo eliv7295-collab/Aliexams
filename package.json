@@ -1,0 +1,14 @@
+{
+  "name": "exam-platform",
+  "version": "1.0.0",
+  "description": "Online exam platform with MCQ auto-grading and FRQ manual grading",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Exam Portal</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <h1>Student Exam Portal</h1>
+      <a href="/admin.html">Go to Admin Panel</a>
+    </div>
+
+    <div class="card">
+      <h2>Available Exams</h2>
+      <div id="examList"></div>
+    </div>
+
+    <div id="examSection" class="card hidden">
+      <h2 id="examTitle"></h2>
+      <p id="examDescription"></p>
+
+      <label>Student Name</label>
+      <input id="studentName" placeholder="Enter your full name" />
+
+      <form id="examForm"></form>
+      <button id="submitExamBtn">Submit Exam</button>
+      <div id="resultBox"></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
